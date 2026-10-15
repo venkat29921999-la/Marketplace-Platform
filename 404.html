@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B2A25">
+  <meta name="robots" content="noindex">
+  <title>404 – Page not found | Stackly</title>
+  <link rel="icon" href="Assest/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="404.css">
+</head>
+<body>
+<div class="nf" id="nf">
+  <div class="bg" aria-hidden="true">
+    <span class="grid"></span><span class="orb o1"></span><span class="orb o2"></span>
+    <div class="dust" id="dust"></div>
+  </div>
+
+  <header class="nf-head up" style="--i:0">
+    <a class="logo" href="index.html" aria-label="Stackly home"><img src="Assest/logo.webp" width="229" height="58" alt="Stackly" onerror="this.replaceWith('Stackly')"></a>
+    <span class="code-pill"><i class="fa-solid fa-triangle-exclamation"></i> Error 404</span>
+  </header>
+
+  <main class="nf-main">
+    <div class="px" data-d="16" aria-hidden="true">
+      <div class="num">
+        <span class="d d1">4</span>
+        <span class="zero"><span class="sat"></span><i class="fa-solid fa-box-open"></i></span>
+        <span class="d d2">4</span>
+      </div>
+    </div>
+
+    <h1 class="up" style="--i:3">This page wandered off.</h1>
+    <p class="lead up" style="--i:4">The link may be broken, or the page may have moved. Don't worry, your cart and your orders are safe.</p>
+
+    <p class="path up" style="--i:5"><i class="fa-solid fa-link-slash"></i><code id="path">/</code></p>
+
+    <div class="actions up" style="--i:6">
+      <a class="btn btn-main" id="backPage" href="login.html"><i class="fa-solid fa-arrow-left" id="backIcon"></i><span id="backLabel">Back to previous page</span></a>
+      <a class="btn btn-line" href="index.html"><i class="fa-solid fa-house"></i><span>Back to home</span></a>
+    </div>
+    <p class="who up" id="who" style="--i:7" hidden></p>
+
+    <nav class="quick up" style="--i:8" aria-label="Popular pages">
+      <span>Or jump to</span>
+      <a href="about.html">About</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+    </nav>
+  </main>
+
+  <footer class="nf-foot up" style="--i:9">&copy; 2026 Stackly Inc. All rights reserved.</footer>
+</div>
+<script src="404.js"></script>
+</body>
+</html>

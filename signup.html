@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0B2A25">
+<title>Sign up | Stackly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="auth.css"></head>
+<body class="au-body" data-page="signup"><div class="au">
+<aside class="au-art"><a class="brand" data-brand href="index.html"></a>
+<div class="art-mid rise"><p class="eyebrow">Join the marketplace</p><h1>Create your <em>Stackly</em> account.</h1><p>Buy with escrow protection or sell to buyers in 96 countries.</p></div>
+<span class="orb o1"></span><span class="orb o2"></span>
+<div class="au-chip c1"><i class="fa-solid fa-truck-fast"></i><div><b>Order shipped</b><small>Arrives Thursday</small></div></div>
+<div class="au-chip c2"><i class="fa-solid fa-shield-halved"></i><div><b>Escrow secured</b><small>$248.00 held safely</small></div></div>
+<div class="proof"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><span>4.9 from 38,000 reviews</span></div></aside>
+<main class="au-main"><div class="au-top"><a class="back" href="index.html"><i class="fa-solid fa-arrow-left"></i>Back to home</a><span>Have an account? <a href="login.html">Log in</a></span></div>
+<form class="au-form" id="form" novalidate>
+<h2 class="rise" style="--i:0">Sign up</h2><p class="sub rise" style="--i:1">It takes less than a minute.</p>
+<div class="msg" role="status"></div>
+<div class="seg rise" style="--i:2" role="radiogroup" aria-label="Role"><input type="radio" name="role" id="rA" value="admin"><label for="rA"><i class="fa-solid fa-user-shield"></i>Admin</label><input type="radio" name="role" id="rU" value="user" checked><label for="rU"><i class="fa-regular fa-user"></i>User</label></div>
+<div class="field rise" style="--i:3"><input type="text" id="name" placeholder=" " required minlength="2" autocomplete="name"><label for="name">Full name</label><i class="fa-solid fa-user"></i><small>Please enter your name.</small></div>
+<div class="field rise" style="--i:4"><input type="email" id="email" placeholder=" " required autocomplete="email"><label for="email">Email address</label><i class="fa-solid fa-envelope"></i><small>Enter a valid email address.</small></div>
+<div class="field pw rise" style="--i:5"><input type="password" id="pass" placeholder=" " required minlength="6" autocomplete="new-password"><label for="pass">Password</label><button class="eye" type="button" aria-label="Show password"><i class="fa-regular fa-eye"></i></button><small>Password needs 6+ characters.</small></div>
+<div class="field pw rise" style="--i:6"><input type="password" id="pass2" placeholder=" " required data-match="#pass" autocomplete="new-password"><label for="pass2">Confirm password</label><button class="eye" type="button" aria-label="Show password"><i class="fa-regular fa-eye"></i></button><small>Passwords do not match.</small></div>
+<button class="btn btn-primary btn-lg rise" style="--i:7" type="submit"><span>Create account</span><i class="fa-solid fa-arrow-right"></i></button>
+</form></main></div><script src="auth.js"></script></body></html>

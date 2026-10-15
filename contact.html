@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Stackly — Talk to a real person</title>
+  <meta name="description" content="Contact Stackly. Chat, call, email or visit. Real people reply in under ten minutes, any day of the week.">
+  <meta name="theme-color" content="#0B2A25">
+  <link rel="icon" href="Assest/logo.webp" type="image/webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <noscript><style>.preloader{display:none!important}</style></noscript>
+</head>
+<body>
+
+
+<div class="progress" id="progress"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="hdr-inner container">
+    <a class="logo" href="index.html" aria-label="Stackly home">
+      <img src="Assest/logo.webp" width="229" height="58" alt="Stackly">
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        <li><a class="nav-link" href="index.html" data-spy="home">Home</a></li>
+        <li><a class="nav-link" href="about.html" data-spy="about">About</a></li>
+        <li><a class="nav-link" href="services.html" data-spy="services">Services</a></li>
+        <li><a class="nav-link" href="blog.html" data-spy="blog">Blog</a></li>
+        <li><a class="nav-link is-active" href="contact.html" data-spy="contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hdr-actions">
+      <a class="btn btn-primary btn-sm magnetic" href="login.html">
+        <i class="fa-regular fa-user" aria-hidden="true"></i><span>Login</span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mmenu" id="mobileMenu" aria-hidden="true">
+  <div class="mmenu-bg"></div>
+  <div class="mmenu-inner">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mmenu-foot">
+      <a class="btn btn-primary" href="login.html"><i class="fa-regular fa-user" aria-hidden="true"></i>Login to Stackly</a>
+      <div class="socials">
+        <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ============ 1. HERO: sonar rings, orbiting faces, typed word ============ -->
+<section class="ct-hero dark" id="ctHero">
+  <div class="ab-glow" aria-hidden="true"></div>
+  <div class="container ct-hero-in">
+    <div class="ct-copy">
+      <p class="ab-eyebrow"><i class="fa-solid fa-headset"></i> Contact</p>
+      <h1 class="ct-title" id="ctTitle" aria-label="Let's talk about selling, shipping, buying or partnering.">
+        <span class="t1" aria-hidden="true">Let's talk about</span>
+        <span class="ct-line" aria-hidden="true"><span id="ctSwap">selling.</span><i class="ct-caret"></i></span>
+      </h1>
+      <p class="ct-live"><i class="ct-pulse"></i><span>Support is online · average reply 8 min</span></p>
+      <p class="lead">Questions about an order, a new shop or a big idea? Real people read every message and answer fast, any day of the week.</p>
+      <div class="ab-btns sv-btns">
+        <a class="btn btn-primary" href="404.html"><span>Write to us</span><i class="fa-solid fa-paper-plane"></i></a>
+        <a class="btn btn-ghost" href="404.html"><i class="fa-solid fa-phone"></i><span>Other ways</span></a>
+      </div>
+    </div>
+
+    <div class="ct-radar" id="ctRadar" aria-hidden="true">
+      <div class="ct-radar-in">
+        <span class="ct-ring"></span><span class="ct-ring"></span><span class="ct-ring"></span>
+        <div class="ct-orbit">
+          <div class="ct-sat" style="--a:0deg"><span><img src="Assest/mp3.webp" width="200" height="200" alt=""></span></div>
+          <div class="ct-sat" style="--a:90deg"><span><img src="Assest/mp4.webp" width="200" height="200" alt=""></span></div>
+          <div class="ct-sat" style="--a:180deg"><span><img src="Assest/mp5.webp" width="200" height="200" alt=""></span></div>
+          <div class="ct-sat" style="--a:270deg"><span><img src="Assest/mp6.webp" width="200" height="200" alt=""></span></div>
+        </div>
+        <div class="ct-core"><img src="Assest/mp22.webp" width="360" height="360" alt="" fetchpriority="high"></div>
+      </div>
+      <div class="ct-bub b1"><i class="fa-solid fa-bolt"></i><div><b>Reply in 8 min</b><small>Live chat</small></div></div>
+      <div class="ct-bub b2"><i class="fa-solid fa-circle-check"></i><div><b>Order sorted</b><small>Escrow released</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. CHANNELS: liquid fill cards ============ -->
+<section class="section ct-chan" id="ctChan">
+  <div class="container">
+    <div class="sec-head">
+      <h2 data-aos="fade-up">Pick a door. Any door works.</h2>
+      <p data-aos="fade-up">Hover or tap a card and watch it fill up. Each channel is staffed by the same team.</p>
+    </div>
+    <div class="ct-chgrid" id="ctChgrid">
+      <article class="ct-ch" tabindex="0">
+        <div class="ct-liq" aria-hidden="true"><svg viewBox="0 0 1200 46" preserveAspectRatio="none"><path d="M0 23 Q75 0 150 23 T300 23 T450 23 T600 23 T750 23 T900 23 T1050 23 T1200 23 V46 H0Z"/></svg></div>
+        <div class="ct-ch-in">
+          <div class="ct-ch-top"><span class="ct-ico"><i class="fa-solid fa-envelope"></i></span><span class="ct-ph"><img src="Assest/mp39.webp" width="240" height="240" alt="Seller reading an email" loading="lazy"></span></div>
+          <h3>Email</h3>
+          <p>Best for details, screenshots and invoices. Replies within a few hours.</p>
+          <b class="ct-val">hello@stackly.com</b>
+          <div class="ct-act"><a class="ct-pill" href="404.html"><i class="fa-solid fa-paper-plane"></i>Write</a><button class="ct-pill" type="button" data-copy="hello@stackly.com"><i class="fa-regular fa-copy"></i>Copy</button></div>
+        </div>
+      </article>
+      <article class="ct-ch" tabindex="0">
+        <div class="ct-liq" aria-hidden="true"><svg viewBox="0 0 1200 46" preserveAspectRatio="none"><path d="M0 23 Q75 0 150 23 T300 23 T450 23 T600 23 T750 23 T900 23 T1050 23 T1200 23 V46 H0Z"/></svg></div>
+        <div class="ct-ch-in">
+          <div class="ct-ch-top"><span class="ct-ico"><i class="fa-solid fa-phone"></i></span><span class="ct-ph"><img src="Assest/mp40.webp" width="240" height="240" alt="Phone conversation" loading="lazy"></span></div>
+          <h3>Phone</h3>
+          <p>Talk to a human, every day from 8am to 8pm Eastern.</p>
+          <b class="ct-val">+1 (555) 014-2290</b>
+          <div class="ct-act"><a class="ct-pill" href="404.html"><i class="fa-solid fa-phone"></i>Call</a><button class="ct-pill" type="button" data-copy="+1 (555) 014-2290"><i class="fa-regular fa-copy"></i>Copy</button></div>
+        </div>
+      </article>
+      <article class="ct-ch" tabindex="0">
+        <div class="ct-liq" aria-hidden="true"><svg viewBox="0 0 1200 46" preserveAspectRatio="none"><path d="M0 23 Q75 0 150 23 T300 23 T450 23 T600 23 T750 23 T900 23 T1050 23 T1200 23 V46 H0Z"/></svg></div>
+        <div class="ct-ch-in">
+          <div class="ct-ch-top"><span class="ct-ico"><i class="fa-solid fa-comments"></i></span><span class="ct-ph"><img src="Assest/mp22.webp" width="240" height="240" alt="Support agent at a laptop" loading="lazy"></span></div>
+          <h3>Live chat</h3>
+          <p>The fastest route. A real person replies in under ten minutes.</p>
+          <b class="ct-val">Open 24 / 7</b>
+          <div class="ct-act"><a class="ct-pill" href="404.html"><i class="fa-solid fa-message"></i>Start chat</a></div>
+        </div>
+      </article>
+      <article class="ct-ch" tabindex="0">
+        <div class="ct-liq" aria-hidden="true"><svg viewBox="0 0 1200 46" preserveAspectRatio="none"><path d="M0 23 Q75 0 150 23 T300 23 T450 23 T600 23 T750 23 T900 23 T1050 23 T1200 23 V46 H0Z"/></svg></div>
+        <div class="ct-ch-in">
+          <div class="ct-ch-top"><span class="ct-ico"><i class="fa-solid fa-location-dot"></i></span><span class="ct-ph"><img src="Assest/mp41.webp" width="240" height="240" alt="Parcel with a delivery pin" loading="lazy"></span></div>
+          <h3>Visit</h3>
+          <p>Drop by, say hello and meet the team behind the screens.</p>
+          <b class="ct-val">48 Mercer Street, New York, NY</b>
+          <div class="ct-act"><a class="ct-pill" href="404.html" target="_blank" rel="noopener"><i class="fa-solid fa-diamond-turn-right"></i>Directions</a><button class="ct-pill" type="button" data-copy="48 Mercer Street, New York, NY"><i class="fa-regular fa-copy"></i>Copy</button></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. FORM: paper plane flies along the progress path ============ -->
+<section class="section dark ct-formsec" id="ctForm">
+  <div class="container ct-fgrid">
+    <div class="ct-fmedia" data-aos="fade-right">
+      <figure><img src="Assest/mp34.webp" width="640" height="800" alt="The Stackly support team" loading="lazy"></figure>
+      <div class="ct-note"><b>8 min</b><span>average first reply</span></div>
+    </div>
+
+    <div class="ct-fwrap">
+      <p class="ab-eyebrow"><i class="fa-solid fa-paper-plane"></i> Send a message</p>
+      <h2 data-aos="fade-up">Three small steps. One fast answer.</h2>
+      <p class="lead" data-aos="fade-up">Tell us what it is about, who you are and what happened. The paper plane carries it from there.</p>
+
+      <div class="ct-card" id="ctCard" data-aos="fade-up">
+        <div class="ct-live-area">
+          <div class="ct-track" aria-hidden="true">
+            <svg viewBox="0 0 300 64" id="ctTrackSvg">
+              <path id="ctGhost" d="M14 46 C70 46 80 14 150 24 S230 56 286 20"/>
+              <path id="ctPath" d="M14 46 C70 46 80 14 150 24 S230 56 286 20"/>
+              <g id="ctFly"><g id="ctPlane"><polygon points="-9,-6 11,0 -9,6 -5,0"/></g></g>
+            </svg>
+            <div class="ct-stops"><span class="on">Topic</span><span>You</span><span>Message</span></div>
+          </div>
+
+          <form id="ctFormEl" novalidate>
+            <fieldset class="ct-step on">
+              <legend class="sr">Step 1</legend>
+              <h3>What brings you here?</h3>
+              <p>Choose the closest match.</p>
+              <div class="ct-topics">
+                <label class="ct-topic"><input type="radio" name="topic" value="sell"><span><i class="fa-solid fa-store"></i>I want to sell</span></label>
+                <label class="ct-topic"><input type="radio" name="topic" value="order"><span><i class="fa-solid fa-box-open"></i>Help with an order</span></label>
+                <label class="ct-topic"><input type="radio" name="topic" value="partner"><span><i class="fa-solid fa-handshake"></i>Partnership or press</span></label>
+                <label class="ct-topic"><input type="radio" name="topic" value="other"><span><i class="fa-solid fa-lightbulb"></i>Something else</span></label>
+              </div>
+              <p class="ct-terr" id="ctTerr" role="alert">Please pick a topic to continue.</p>
+            </fieldset>
+
+            <fieldset class="ct-step">
+              <legend class="sr">Step 2</legend>
+              <h3>Who are we talking to?</h3>
+              <p>So we know who to reply to.</p>
+              <div class="ct-fields">
+                <div class="field"><input type="text" id="ctName" name="name" placeholder=" " required autocomplete="name"><label for="ctName">Your name</label><i class="fa-solid fa-user"></i><small>Please enter your name.</small></div>
+                <div class="field"><input type="email" id="ctMail" name="email" placeholder=" " required autocomplete="email"><label for="ctMail">Email address</label><i class="fa-solid fa-envelope"></i><small>Enter a valid email address.</small></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="ct-step">
+              <legend class="sr">Step 3</legend>
+              <h3>Tell us more</h3>
+              <p>The more detail, the faster we can help.</p>
+              <div class="field" id="ctMsgF"><textarea id="ctMsg" name="message" rows="4" placeholder=" " required minlength="10" maxlength="500"></textarea><label for="ctMsg">Your message</label><small>Tell us a little more (10+ characters).</small></div>
+              <p class="ct-count"><span id="ctN">0</span> / 500</p>
+            </fieldset>
+
+            <div class="ct-nav">
+              <button class="ct-back" id="ctBack" type="button" hidden><i class="fa-solid fa-arrow-left"></i> Back</button>
+              <button class="btn btn-dark" id="ctNext" type="button"><span>Next</span><i class="fa-solid fa-arrow-right"></i></button>
+              <button class="btn btn-dark" id="ctSend" type="submit" hidden><span>Send message</span><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+          </form>
+        </div>
+
+        <div class="ct-ok" role="status">
+          <div class="ct-stamp">Received</div>
+          <h3>Thanks, <span id="ctOkName">friend</span>. We have it.</h3>
+          <p>A real person will reply by email shortly.</p>
+          <p class="ct-ticket">Ticket <b id="ctTicket">#SKL-00000</b></p>
+          <button class="btn btn-ghost-dk" id="ctAgain" type="button"><i class="fa-solid fa-rotate-left"></i><span>Send another</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. HUBS: live clocks, day and night photos ============ -->
+<section class="section ct-hubs" id="ctHubs">
+  <div class="container">
+    <div class="sec-head">
+      <h2 data-aos="fade-up">Four hubs. The sun is always up somewhere.</h2>
+      <p data-aos="fade-up">Live local time at every Stackly hub. Photos dim at night and the sun hands over to the moon.</p>
+    </div>
+    <div class="ct-hgrid">
+      <article class="ct-hub" data-tz="America/New_York" data-aos="fade-up">
+        <div class="ct-sky"><img src="Assest/mp37.webp" width="560" height="380" alt="Parcel with a delivery pin" loading="lazy"><span class="ct-orb"></span><span class="ct-tag">HQ</span></div>
+        <div class="ct-hbody">
+          <svg class="ct-clock" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="47" class="rim"/><circle cx="50" cy="50" r="40" class="ticks"/><line class="ct-hr" x1="50" y1="50" x2="50" y2="29"/><line class="ct-mn" x1="50" y1="50" x2="50" y2="17"/><line class="ct-sc" x1="50" y1="56" x2="50" y2="13"/><circle cx="50" cy="50" r="3.4" class="pin"/></svg>
+          <div class="ct-hinfo"><h3>New York</h3><small>United States</small><strong class="ct-dig" aria-label="Local time">--:--</strong></div>
+          <span class="ct-open"><i></i><em>Checking…</em></span>
+          <p class="ct-hrs">Support 08:00 – 20:00 local</p>
+        </div>
+      </article>
+      <article class="ct-hub" data-tz="Europe/Berlin" data-aos="fade-up" data-aos-delay="100">
+        <div class="ct-sky"><img src="Assest/mp19.webp" width="560" height="380" alt="Parcels ready to ship" loading="lazy"><span class="ct-orb"></span></div>
+        <div class="ct-hbody">
+          <svg class="ct-clock" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="47" class="rim"/><circle cx="50" cy="50" r="40" class="ticks"/><line class="ct-hr" x1="50" y1="50" x2="50" y2="29"/><line class="ct-mn" x1="50" y1="50" x2="50" y2="17"/><line class="ct-sc" x1="50" y1="56" x2="50" y2="13"/><circle cx="50" cy="50" r="3.4" class="pin"/></svg>
+          <div class="ct-hinfo"><h3>Berlin</h3><small>Germany</small><strong class="ct-dig" aria-label="Local time">--:--</strong></div>
+          <span class="ct-open"><i></i><em>Checking…</em></span>
+          <p class="ct-hrs">Support 08:00 – 20:00 local</p>
+        </div>
+      </article>
+      <article class="ct-hub" data-tz="Asia/Kolkata" data-aos="fade-up" data-aos-delay="200">
+        <div class="ct-sky"><img src="Assest/mp21.webp" width="560" height="380" alt="Market stall" loading="lazy"><span class="ct-orb"></span></div>
+        <div class="ct-hbody">
+          <svg class="ct-clock" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="47" class="rim"/><circle cx="50" cy="50" r="40" class="ticks"/><line class="ct-hr" x1="50" y1="50" x2="50" y2="29"/><line class="ct-mn" x1="50" y1="50" x2="50" y2="17"/><line class="ct-sc" x1="50" y1="56" x2="50" y2="13"/><circle cx="50" cy="50" r="3.4" class="pin"/></svg>
+          <div class="ct-hinfo"><h3>Chennai</h3><small>India</small><strong class="ct-dig" aria-label="Local time">--:--</strong></div>
+          <span class="ct-open"><i></i><em>Checking…</em></span>
+          <p class="ct-hrs">Support 08:00 – 20:00 local</p>
+        </div>
+      </article>
+      <article class="ct-hub" data-tz="Asia/Singapore" data-aos="fade-up" data-aos-delay="300">
+        <div class="ct-sky"><img src="Assest/mp24.webp" width="560" height="380" alt="Delivery tracking map" loading="lazy"><span class="ct-orb"></span></div>
+        <div class="ct-hbody">
+          <svg class="ct-clock" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="47" class="rim"/><circle cx="50" cy="50" r="40" class="ticks"/><line class="ct-hr" x1="50" y1="50" x2="50" y2="29"/><line class="ct-mn" x1="50" y1="50" x2="50" y2="17"/><line class="ct-sc" x1="50" y1="56" x2="50" y2="13"/><circle cx="50" cy="50" r="3.4" class="pin"/></svg>
+          <div class="ct-hinfo"><h3>Singapore</h3><small>Singapore</small><strong class="ct-dig" aria-label="Local time">--:--</strong></div>
+          <span class="ct-open"><i></i><em>Checking…</em></span>
+          <p class="ct-hrs">Support 08:00 – 20:00 local</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. PULSE: reply-time gauge + 24h equalizer ============ -->
+<section class="section dark ct-pulse-sec" id="ctPulse">
+  <div class="container ct-pgrid">
+    <div class="ct-gwrap">
+      <p class="ab-eyebrow"><i class="fa-solid fa-gauge-high"></i> Support pulse</p>
+      <h2 data-aos="fade-up">Fast is a promise, not a slogan.</h2>
+      <div class="ct-gauge" data-aos="fade-up">
+        <svg viewBox="0 0 300 190" role="img" aria-label="Gauge: average first reply 8 minutes on a scale of 0 to 30">
+          <path class="g-track" d="M30 150 A120 120 0 0 1 270 150"/>
+          <path class="g-fill" id="ctFill" d="M30 150 A120 120 0 0 1 270 150"/>
+          <g class="g-lab"><text x="30" y="176" text-anchor="middle">0</text><text x="80" y="30" text-anchor="middle">10</text><text x="220" y="30" text-anchor="middle">20</text><text x="270" y="176" text-anchor="middle">30 min</text></g>
+          <line class="g-needle" id="ctNeedle" x1="150" y1="150" x2="150" y2="52"/>
+          <circle cx="150" cy="150" r="9" class="g-hub"/>
+        </svg>
+        <div class="ct-gnum"><strong><span id="ctGnum">8</span><small> min</small></strong><span>average first reply</span></div>
+      </div>
+      <div class="ct-meet" data-aos="fade-up">
+        <div class="ct-av">
+          <img src="Assest/mp3.webp" width="160" height="160" alt="" loading="lazy">
+          <img src="Assest/mp4.webp" width="160" height="160" alt="" loading="lazy">
+          <img src="Assest/mp5.webp" width="160" height="160" alt="" loading="lazy">
+          <img src="Assest/mp6.webp" width="160" height="160" alt="" loading="lazy">
+        </div>
+        <p><b>Real people</b>, not bots, answer every message.</p>
+      </div>
+    </div>
+
+    <div class="ct-eqwrap" data-aos="fade-up">
+      <div class="ct-eqhead"><h3>Agents online, hour by hour</h3><p class="ct-tip" id="ctTip" aria-live="polite">Hover or tap a bar</p></div>
+      <div class="ct-eq" id="ctEq" role="group" aria-label="Agents online by hour of the day"></div>
+      <div class="ct-axis" aria-hidden="true"><span>00</span><span>06</span><span>12</span><span>18</span><span>23</span></div>
+      <ul class="ct-chips">
+        <li><i class="fa-solid fa-moon"></i>Night shift always on</li>
+        <li><i class="fa-solid fa-language"></i>12 languages</li>
+        <li><i class="fa-solid fa-star"></i>4.9 support rating</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. QUICK ANSWERS: swipe the card deck ============ -->
+<section class="section ct-quick" id="ctQuick">
+  <div class="container ct-qgrid">
+    <div class="ct-qcopy">
+      <p class="ab-eyebrow dk"><i class="fa-solid fa-bolt"></i> Quick answers</p>
+      <h2 data-aos="fade-up">Swipe away the small stuff.</h2>
+      <p class="lead" data-aos="fade-up">The five questions we hear most. Drag a card off the deck, or use the arrows, to reach the next one.</p>
+      <div class="ct-qctl slider-ctrl" data-aos="fade-up">
+        <button id="ctPrevQ" type="button" aria-label="Previous question"><i class="fa-solid fa-arrow-left"></i></button>
+        <button id="ctNextQ" type="button" aria-label="Next question"><i class="fa-solid fa-arrow-right"></i></button>
+        <span class="ct-qcount" id="ctQcount" aria-live="polite">1 / 5</span>
+      </div>
+    </div>
+
+    <div class="ct-deckwrap" data-aos="zoom-in">
+      <div class="ct-deck" id="ctDeck" tabindex="0" aria-label="Frequently asked questions. Use the left and right arrow keys to browse.">
+        <article class="ct-qc"><div class="ct-qimg"><img src="Assest/mp22.webp" width="560" height="360" alt="" loading="lazy" draggable="false"><span class="ct-qtag">Support</span></div><div class="ct-qbody"><h3>How fast will I hear back?</h3><p>Chat and calls get answered in under ten minutes. Email replies arrive within a few hours, even overnight.</p><small><i class="fa-solid fa-hand-pointer"></i> Swipe or drag</small></div></article>
+        <article class="ct-qc"><div class="ct-qimg"><img src="Assest/mp23.webp" width="560" height="360" alt="" loading="lazy" draggable="false"><span class="ct-qtag">Escrow</span></div><div class="ct-qbody"><h3>Where is my payment?</h3><p>It rests safely in escrow until you confirm delivery. Open the order page to see its status.</p><small><i class="fa-solid fa-hand-pointer"></i> Swipe or drag</small></div></article>
+        <article class="ct-qc"><div class="ct-qimg"><img src="Assest/mp18.webp" width="560" height="360" alt="" loading="lazy" draggable="false"><span class="ct-qtag">Selling</span></div><div class="ct-qbody"><h3>How do I open a shop?</h3><p>Verify your ID, add three photos and publish. Most sellers go live in about ten minutes.</p><small><i class="fa-solid fa-hand-pointer"></i> Swipe or drag</small></div></article>
+        <article class="ct-qc"><div class="ct-qimg"><img src="Assest/mp19.webp" width="560" height="360" alt="" loading="lazy" draggable="false"><span class="ct-qtag">Orders</span></div><div class="ct-qbody"><h3>Can I cancel an order?</h3><p>Yes, any time before the seller ships. After that you have 7 days to start a return.</p><small><i class="fa-solid fa-hand-pointer"></i> Swipe or drag</small></div></article>
+        <article class="ct-qc"><div class="ct-qimg"><img src="Assest/mp24.webp" width="560" height="360" alt="" loading="lazy" draggable="false"><span class="ct-qtag">Shipping</span></div><div class="ct-qbody"><h3>Where is my parcel?</h3><p>Open Orders, tap Track and follow the live map. Nothing moved in 48 hours? Message us.</p><small><i class="fa-solid fa-hand-pointer"></i> Swipe or drag</small></div></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. SCRATCH CARD: reveal a seller perk ============ -->
+<section class="section ct-scr" id="ctScratch">
+  <div class="container ct-sgrid">
+    <div class="ct-scopy">
+      <p class="ab-eyebrow"><i class="fa-solid fa-gift"></i> A small thank-you</p>
+      <h2 data-aos="fade-up">Scratch to reveal your seller perk.</h2>
+      <p class="lead" data-aos="fade-up">Thinking about opening a shop? Use the card with your finger or mouse and see what is waiting underneath.</p>
+      <div class="ab-btns sv-btns" data-aos="fade-up">
+        <a class="btn btn-dark" href="404.html"><span>Start selling</span><i class="fa-solid fa-arrow-right"></i></a>
+        <button class="btn btn-ghost" id="ctReveal" type="button"><i class="fa-solid fa-eye"></i><span>Just show me</span></button>
+      </div>
+    </div>
+
+    <div class="ct-sc-wrap" data-aos="zoom-in-up">
+      <div class="ct-scratch" id="ctScratchCard">
+        <div class="ct-prize">
+          <img src="Assest/mp9.webp" width="640" height="480" alt="" loading="lazy">
+          <div class="ct-prize-in">
+            <small>Seller perk</small>
+            <strong>0% fees</strong>
+            <span>for your first 30 days</span>
+            <div class="ct-codebox"><b>WELCOME30</b><button type="button" data-copy="WELCOME30" aria-label="Copy code"><i class="fa-regular fa-copy"></i></button></div>
+          </div>
+        </div>
+        <canvas aria-hidden="true"></canvas>
+      </div>
+      <span class="ct-sticker" aria-hidden="true"><i class="fa-solid fa-hand-pointer"></i><b>Scratch<br>me</b></span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer dark">
+  <div class="container footer-top">
+    <div class="f-brand">
+      <a href="index.html" class="logo" aria-label="Stackly home"><img src="Assest/logo.webp" width="229" height="58" alt="Stackly"></a>
+      <p>The marketplace where great finds meet the people who want them.</p>
+      <form class="news" id="newsForm" novalidate>
+        <input type="email" placeholder="Your email for weekly picks" aria-label="Email address" autocomplete="off" required>
+        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+      <p class="news-ok" id="newsOk" role="status"></p>
+    </div>
+    <nav class="f-col" aria-label="Marketplace">
+      <h4>Marketplace</h4>
+      <a href="404.html">Categories</a><a href="404.html">Featured picks</a><a href="404.html">How it works</a><a href="404.html">Reviews</a>
+    </nav>
+    <nav class="f-col" aria-label="Company">
+      <h4>Company</h4>
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="f-col">
+      <h4>Follow us</h4>
+      <div class="socials">
+        <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <p class="f-pay"><i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i><i class="fa-brands fa-cc-paypal"></i><i class="fa-brands fa-apple-pay"></i></p>
+    </div>
+  </div>
+  <div class="footer-mark" aria-hidden="true"><img src="Assest/logo.webp" width="229" height="58" alt="" loading="lazy"></div>
+  <div class="container footer-bottom">
+    <span>&copy; 2026 Stackly Inc. All rights reserved.</span>
+    <span class="f-legal"><a href="404.html">Privacy</a><a href="404.html">Terms</a><a href="404.html">Cookies</a></span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Login dialog -->
+<dialog class="login" id="loginDialog" aria-labelledby="loginTitle">
+  <div class="login-card">
+    <button class="login-close" type="button" aria-label="Close login" data-close-login><i class="fa-solid fa-xmark"></i></button>
+    <div class="login-art"><img src="Assest/mp1.webp" width="560" height="560" alt=""></div>
+    <form class="login-form" id="loginForm" novalidate>
+      <h3 id="loginTitle">Welcome back</h3>
+      <p>Log in to track orders, manage listings and message sellers.</p>
+      <div class="field"><input type="email" id="lMail" placeholder=" " required autocomplete="email"><label for="lMail">Email address</label><i class="fa-solid fa-envelope"></i><small>Enter a valid email address.</small></div>
+      <div class="field"><input type="password" id="lPass" placeholder=" " required minlength="6" autocomplete="current-password"><label for="lPass">Password</label><i class="fa-solid fa-lock"></i><small>Password needs 6+ characters.</small></div>
+      <button class="btn btn-primary btn-lg" type="submit"><span>Log in</span><i class="fa-solid fa-arrow-right"></i></button>
+      <p class="login-alt">New here? <a href="contact.html#ctForm" data-close-login>Create an account</a></p>
+    </form>
+  </div>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+<script>document.querySelectorAll("img").forEach(function(i){i.addEventListener("error",function(){i.style.visibility="hidden"})})</script>
+</body>
+</html>

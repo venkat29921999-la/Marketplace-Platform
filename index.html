@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stackly | The marketplace where great finds meet the people who want them</title>
+  <meta name="description" content="Stackly is a marketplace platform connecting 180,000 verified sellers with buyers in 96 countries. Escrow payments, tracked shipping and honest reviews.">
+  <meta name="theme-color" content="#0B2A25">
+  <link rel="icon" href="Assest/logo.webp" type="image/webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <noscript><style>.preloader{display:none!important}</style></noscript>
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-inner">
+    <img src="Assest/logo.webp" width="229" height="58" alt="">
+    <div class="pre-bar"><span id="preBar"></span></div>
+    <div class="pre-count"><span id="preNum">0</span>%</div>
+  </div>
+</div>
+
+<div class="progress" id="progress"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="hdr-inner container">
+    <a class="logo" href="#home" aria-label="Stackly home">
+      <img src="Assest/logo.webp" width="229" height="58" alt="Stackly">
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        <li><a class="nav-link is-active" href="index.html" data-spy="home">Home</a></li>
+        <li><a class="nav-link" href="about.html" data-spy="about">About</a></li>
+        <li><a class="nav-link" href="services.html" data-spy="services">Services</a></li>
+        <li><a class="nav-link" href="blog.html" data-spy="blog">Blog</a></li>
+        <li><a class="nav-link" href="contact.html" data-spy="contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hdr-actions">
+      <a class="btn btn-primary btn-sm magnetic" href="login.html">
+        <i class="fa-regular fa-user" aria-hidden="true"></i><span>Login</span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mmenu" id="mobileMenu" aria-hidden="true">
+  <div class="mmenu-bg"></div>
+  <div class="mmenu-inner">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mmenu-foot">
+      <a class="btn btn-primary" href="login.html"><i class="fa-regular fa-user" aria-hidden="true"></i>Login to Stackly</a>
+      <div class="socials">
+        <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="orb orb-1"></span><span class="orb orb-2"></span>
+    <span class="grid-lines"></span>
+  </div>
+
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="hero-note" data-hero="fade"><i class="fa-solid fa-bolt" aria-hidden="true"></i> 12,400 new listings added this week</p>
+
+      <h1 class="hero-title" aria-label="Buy it, sell it, love it again.">
+        <span class="ln" aria-hidden="true"><span class="ln-in">Buy it,</span><span class="pill"><img src="Assest/mp1.webp" width="560" height="560" alt=""></span></span>
+        <span class="ln" aria-hidden="true"><span class="pill pill-b"><img src="Assest/mp2.webp" width="560" height="560" alt=""></span><span class="ln-in">sell it,</span></span>
+        <span class="ln" aria-hidden="true"><span class="ln-in">love it again.</span></span>
+      </h1>
+
+      <p class="hero-sub" data-hero="fade">Stackly connects verified sellers with buyers in 96 countries. Pay through escrow, track every parcel, and read reviews from people who actually bought.</p>
+
+      <div class="hero-cta" data-hero="fade">
+        <a class="btn btn-primary magnetic" href="404.html"><span>Start shopping</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        <a class="btn btn-ghost magnetic" href="404.html"><i class="fa-solid fa-circle-play" aria-hidden="true"></i><span>See how it works</span></a>
+      </div>
+
+      <div class="hero-proof" data-hero="fade">
+        <div class="avatars">
+          <img src="Assest/mp3.webp" width="240" height="240" alt="Buyer">
+          <img src="Assest/mp4.webp" width="240" height="240" alt="Seller">
+          <img src="Assest/mp5.webp" width="240" height="240" alt="Buyer">
+          <img src="Assest/mp6.webp" width="240" height="240" alt="Seller">
+        </div>
+        <div class="proof-txt">
+          <div class="stars" aria-label="Rated 4.9 out of 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <span>4.9 from 38,000 reviews</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual" id="heroVisual" aria-hidden="true">
+      <div class="hv hv-main" data-depth="14">
+        <img src="Assest/mp7.webp" width="900" height="1100" alt="" fetchpriority="high">
+      </div>
+      <div class="hv hv-a" data-depth="34"><img src="Assest/mp1.webp" width="560" height="560" alt=""></div>
+      <div class="hv hv-b" data-depth="26"><img src="Assest/mp2.webp" width="560" height="560" alt=""></div>
+      <div class="hv hv-c" data-depth="40"><img src="Assest/mp8.webp" width="560" height="560" alt=""></div>
+
+      <div class="hv chip chip-1" data-depth="52"><i class="fa-solid fa-truck-fast"></i><div><b>Order shipped</b><small>Arrives Thursday</small></div></div>
+      <div class="hv chip chip-2" data-depth="46"><i class="fa-solid fa-shield-halved"></i><div><b>Escrow secured</b><small>$248.00 held safely</small></div></div>
+      <div class="hv chip chip-3" data-depth="58"><i class="fa-solid fa-heart"></i><div><b>1,284 saves</b><small>Atelier Tote</small></div></div>
+
+      <div class="hv badge" data-depth="20">
+        <svg viewBox="0 0 120 120" class="badge-ring">
+          <defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+          <text><textPath href="#circ" startOffset="0" textLength="272" lengthAdjust="spacing">Verified • Secure • Fast • Trusted •</textPath></text>
+        </svg>
+        <i class="fa-solid fa-store"></i>
+      </div>
+    </div>
+  </div>
+
+  <a class="scroll-cue" href="#trust" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
+
+<!-- ============ 2. TRUST MARQUEE ============ -->
+<section class="trust" id="trust" aria-label="Brands that sell on Stackly">
+  <p class="trust-title container">Home to independent makers and growing brands</p>
+  <div class="marquee">
+    <div class="marquee-track">
+      <ul>
+        <li><i class="fa-solid fa-leaf"></i>Northgrove</li><li><i class="fa-solid fa-gem"></i>Lumen &amp; Co</li><li><i class="fa-solid fa-mountain"></i>Alder Peak</li><li><i class="fa-solid fa-feather-pointed"></i>Plume Atelier</li><li><i class="fa-solid fa-sun"></i>Marigold Goods</li><li><i class="fa-solid fa-anchor"></i>Harbor Supply</li><li><i class="fa-solid fa-seedling"></i>Rootwork</li><li><i class="fa-solid fa-bolt"></i>Voltline</li>
+      </ul>
+      <ul aria-hidden="true">
+        <li><i class="fa-solid fa-leaf"></i>Northgrove</li><li><i class="fa-solid fa-gem"></i>Lumen &amp; Co</li><li><i class="fa-solid fa-mountain"></i>Alder Peak</li><li><i class="fa-solid fa-feather-pointed"></i>Plume Atelier</li><li><i class="fa-solid fa-sun"></i>Marigold Goods</li><li><i class="fa-solid fa-anchor"></i>Harbor Supply</li><li><i class="fa-solid fa-seedling"></i>Rootwork</li><li><i class="fa-solid fa-bolt"></i>Voltline</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div class="about-media">
+      <figure class="reveal-img about-main">
+        <img src="Assest/mp9.webp" width="800" height="1000" alt="Curated home goods on a pedestal" loading="lazy">
+      </figure>
+      <figure class="about-float">
+        <img src="Assest/mp10.webp" width="640" height="640" alt="Stackly listing on a phone" loading="lazy">
+      </figure>
+      <div class="about-badge" data-aos="zoom-in" data-aos-delay="350">
+        <strong class="counter" data-count="8" data-suffix="+">0</strong>
+        <span>years building trust between strangers</span>
+      </div>
+    </div>
+
+    <div class="about-copy">
+      <h2 class="split-title">A marketplace built so both sides walk away happy.</h2>
+      <p class="lead" data-aos="fade-up">We started Stackly after watching friends lose money on risky deals. Today every order is protected, every seller is checked, and every review comes from a real purchase.</p>
+      <ul class="check-list">
+        <li data-aos="fade-up" data-aos-delay="50"><span><i class="fa-solid fa-user-check"></i></span><div><h3>Sellers are verified</h3><p>ID, bank and address checks before the first listing goes live.</p></div></li>
+        <li data-aos="fade-up" data-aos-delay="120"><span><i class="fa-solid fa-lock"></i></span><div><h3>Money stays in escrow</h3><p>Sellers are paid only after you confirm the item arrived as described.</p></div></li>
+        <li data-aos="fade-up" data-aos-delay="190"><span><i class="fa-solid fa-comments"></i></span><div><h3>Real people answer</h3><p>Our support team replies in under ten minutes, any day of the week.</p></div></li>
+      </ul>
+      <a class="btn btn-dark magnetic" href="404.html" data-aos="fade-up"><span>Explore our services</span><i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. CATEGORIES ============ -->
+<section class="section categories dark" id="categories">
+  <div class="container">
+    <div class="sec-head">
+      <h2 class="split-title">Six aisles. Thousands of shops.</h2>
+      <p data-aos="fade-up">Hover or tap an aisle to step inside. Each one is curated weekly by our editors.</p>
+    </div>
+
+    <div class="cat-strip" id="catStrip">
+      <a href="404.html" class="cat is-active" data-aos="fade-up" data-aos-delay="0">
+        <img src="Assest/mp11.webp" width="720" height="860" alt="Fashion accessories" loading="lazy">
+        <div class="cat-info"><span class="cat-ico"><i class="fa-solid fa-bag-shopping"></i></span><h3>Fashion</h3><p>24,800 items</p></div>
+      </a>
+      <a href="404.html" class="cat" data-aos="fade-up" data-aos-delay="80">
+        <img src="Assest/mp12.webp" width="720" height="860" alt="Headphones and gadgets" loading="lazy">
+        <div class="cat-info"><span class="cat-ico"><i class="fa-solid fa-headphones"></i></span><h3>Tech</h3><p>18,200 items</p></div>
+      </a>
+      <a href="404.html" class="cat" data-aos="fade-up" data-aos-delay="160">
+        <img src="Assest/mp13.webp" width="720" height="860" alt="Lamps and home decor" loading="lazy">
+        <div class="cat-info"><span class="cat-ico"><i class="fa-solid fa-couch"></i></span><h3>Home</h3><p>31,500 items</p></div>
+      </a>
+      <a href="404.html" class="cat" data-aos="fade-up" data-aos-delay="240">
+        <img src="Assest/mp14.webp" width="720" height="860" alt="Sculpture and art objects" loading="lazy">
+        <div class="cat-info"><span class="cat-ico"><i class="fa-solid fa-palette"></i></span><h3>Art</h3><p>9,400 items</p></div>
+      </a>
+      <a href="404.html" class="cat" data-aos="fade-up" data-aos-delay="320">
+        <img src="Assest/mp15.webp" width="720" height="860" alt="Fitness equipment" loading="lazy">
+        <div class="cat-info"><span class="cat-ico"><i class="fa-solid fa-dumbbell"></i></span><h3>Sports</h3><p>12,100 items</p></div>
+      </a>
+      <a href="404.html" class="cat" data-aos="fade-up" data-aos-delay="400">
+        <img src="Assest/mp16.webp" width="720" height="860" alt="Beauty and skincare bottles" loading="lazy">
+        <div class="cat-info"><span class="cat-ico"><i class="fa-solid fa-spa"></i></span><h3>Beauty</h3><p>15,700 items</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. SERVICES ============ -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="sec-head">
+      <h2 class="split-title">Everything a deal needs, handled.</h2>
+      <p data-aos="fade-up">From the first listing photo to the last delivery scan, Stackly takes care of the hard parts so you can focus on the good ones.</p>
+    </div>
+
+    <div class="svc-grid">
+      <article class="svc-card glare" data-aos="fade-up">
+        <div class="svc-img"><img src="Assest/mp17.webp" width="900" height="640" alt="Listing builder on a phone" loading="lazy"></div>
+        <div class="svc-body">
+          <span class="svc-ico"><i class="fa-solid fa-camera-retro"></i></span>
+          <h3>Smart listings</h3>
+          <p>Snap three photos and our builder writes the title, picks the category and suggests a fair price.</p>
+          <a class="link-arrow" href="404.html">Start selling <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="svc-card glare" data-aos="fade-up" data-aos-delay="120">
+        <div class="svc-img"><img src="Assest/mp18.webp" width="900" height="640" alt="Secure payment confirmation" loading="lazy"></div>
+        <div class="svc-body">
+          <span class="svc-ico"><i class="fa-solid fa-credit-card"></i></span>
+          <h3>Escrow payments</h3>
+          <p>Funds are held until delivery is confirmed, with instant refunds when something goes wrong.</p>
+          <a class="link-arrow" href="404.html">See how it works <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="svc-card glare" data-aos="fade-up" data-aos-delay="240">
+        <div class="svc-img"><img src="Assest/mp19.webp" width="900" height="640" alt="Parcel with a delivery pin" loading="lazy"></div>
+        <div class="svc-body">
+          <span class="svc-ico"><i class="fa-solid fa-truck-fast"></i></span>
+          <h3>Tracked delivery</h3>
+          <p>Discounted labels from 40 carriers, with live tracking sent to both buyer and seller.</p>
+          <a class="link-arrow" href="404.html">Ship with Stackly <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="svc-banner" data-aos="zoom-in-up">
+      <div class="svc-banner-copy">
+        <h3>Seller dashboard with live numbers</h3>
+        <p>Watch views, offers and payouts update in real time. Export a tax-ready report with one click.</p>
+        <ul>
+          <li><i class="fa-solid fa-chart-line"></i>Sales analytics</li>
+          <li><i class="fa-solid fa-boxes-stacked"></i>Inventory sync</li>
+          <li><i class="fa-solid fa-headset"></i>Priority support</li>
+          <li><i class="fa-solid fa-globe"></i>Global reach</li>
+        </ul>
+      </div>
+      <div class="svc-banner-img"><img src="Assest/mp20.webp" width="900" height="700" alt="Payout confirmation screen" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. HOW IT WORKS (pinned horizontal) ============ -->
+<section class="how dark" id="how">
+  <div class="how-pin">
+    <div class="how-top container">
+      <h2 class="split-title">Four steps from "I want that" to "It's here."</h2>
+      <div class="how-progress" aria-hidden="true"><span id="howBar"></span></div>
+    </div>
+
+    <div class="how-track" id="howTrack">
+      <article class="how-panel">
+        <div class="how-img"><img src="Assest/mp21.webp" width="900" height="720" alt="Browsing listings" loading="lazy"></div>
+        <div class="how-txt">
+          <span class="how-num">1</span>
+          <h3>Browse with confidence</h3>
+          <p>Filter by price, condition and seller rating. Every listing shows real photos and a verified badge.</p>
+          <ul><li><i class="fa-solid fa-check"></i>Saved searches and price alerts</li><li><i class="fa-solid fa-check"></i>Condition grading on every item</li></ul>
+        </div>
+      </article>
+      <article class="how-panel">
+        <div class="how-img"><img src="Assest/mp22.webp" width="900" height="720" alt="Chatting with a seller" loading="lazy"></div>
+        <div class="how-txt">
+          <span class="how-num">2</span>
+          <h3>Chat and make an offer</h3>
+          <p>Ask questions, request extra photos, and negotiate right inside Stackly. No phone numbers needed.</p>
+          <ul><li><i class="fa-solid fa-check"></i>Offers expire after 24 hours</li><li><i class="fa-solid fa-check"></i>Scam detection on every message</li></ul>
+        </div>
+      </article>
+      <article class="how-panel">
+        <div class="how-img"><img src="Assest/mp23.webp" width="900" height="720" alt="Paying through escrow" loading="lazy"></div>
+        <div class="how-txt">
+          <span class="how-num">3</span>
+          <h3>Pay into escrow</h3>
+          <p>Use a card, wallet or bank transfer. We hold the money safely until you say the item is right.</p>
+          <ul><li><i class="fa-solid fa-check"></i>Cards, wallets, bank and UPI</li><li><i class="fa-solid fa-check"></i>Refund window of 7 days</li></ul>
+        </div>
+      </article>
+      <article class="how-panel">
+        <div class="how-img"><img src="Assest/mp24.webp" width="900" height="720" alt="Tracking a delivery on a map" loading="lazy"></div>
+        <div class="how-txt">
+          <span class="how-num">4</span>
+          <h3>Track it to your door</h3>
+          <p>Follow the parcel live, confirm delivery, and leave a review that helps the next buyer.</p>
+          <ul><li><i class="fa-solid fa-check"></i>Live map tracking</li><li><i class="fa-solid fa-check"></i>Seller paid on confirmation</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. FEATURED PRODUCTS ============ -->
+<section class="section shop" id="shop">
+  <div class="container">
+    <div class="sec-head">
+      <h2 class="split-title">Picked by our editors this week.</h2>
+      <div class="filters" role="tablist" aria-label="Filter products" data-aos="fade-up">
+        <button class="chip-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="chip-btn" data-filter="fashion" role="tab" aria-selected="false">Fashion</button>
+        <button class="chip-btn" data-filter="tech" role="tab" aria-selected="false">Tech</button>
+        <button class="chip-btn" data-filter="home" role="tab" aria-selected="false">Home</button>
+        <button class="chip-btn" data-filter="lifestyle" role="tab" aria-selected="false">Lifestyle</button>
+      </div>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+      <article class="product tilt" data-cat="fashion">
+        <div class="p-img"><img src="Assest/mp25.webp" width="700" height="700" alt="Atelier saffron tote bag" loading="lazy"><span class="p-badge">Bestseller</span><button class="p-heart" aria-label="Save to wishlist" aria-pressed="false" onclick="window.location.href='404.html'"><i class="fa-regular fa-heart"></i></button></div>
+        <div class="p-body"><div class="p-meta"><span><i class="fa-solid fa-store"></i> Mira Studio</span><span class="p-rate"><i class="fa-solid fa-star"></i> 4.9</span></div><h3>Atelier Tote</h3><div class="p-foot"><strong>$128</strong><button class="add-cart" data-name="Atelier Tote" onclick="window.location.href='404.html';">
+  <i class="fa-solid fa-bag-shopping"></i> Add</button>
+</div></div>
+      </article>
+      <article class="product tilt" data-cat="tech">
+        <div class="p-img"><img src="Assest/mp26.webp" width="700" height="700" alt="Halo over-ear headphones" loading="lazy"><span class="p-badge">New</span><button class="p-heart" aria-label="Save to wishlist" aria-pressed="false" onclick="window.location.href='404.html'"><i class="fa-regular fa-heart"></i></button></div>
+        <div class="p-body"><div class="p-meta"><span><i class="fa-solid fa-store"></i> Voltline</span><span class="p-rate"><i class="fa-solid fa-star"></i> 4.8</span></div><h3>Halo Over-ear Headphones</h3><div class="p-foot"><strong>$189</strong><button class="add-cart" data-name="Halo Headphones" onclick="window.location.href='404.html';">
+  <i class="fa-solid fa-bag-shopping"></i> Add
+</button>
+</div></div>
+      </article>
+      <article class="product tilt" data-cat="fashion">
+        <div class="p-img"><img src="Assest/mp27.webp" width="700" height="700" alt="Orbit field watch" loading="lazy"><span class="p-badge">20% off</span><button class="p-heart" aria-label="Save to wishlist" aria-pressed="false" onclick="window.location.href='404.html'"><i class="fa-regular fa-heart"></i></button></div>
+        <div class="p-body"><div class="p-meta"><span><i class="fa-solid fa-store"></i> Alder Peak</span><span class="p-rate"><i class="fa-solid fa-star"></i> 4.9</span></div><h3>Orbit Field Watch</h3><div class="p-foot"><strong>$240</strong><button class="add-cart" data-name="Orbit Field Watch" onclick="window.location.href='404.html';">
+  <i class="fa-solid fa-bag-shopping"></i> Add
+</button>
+</div></div>
+      </article>
+      <article class="product tilt" data-cat="tech">
+        <div class="p-img"><img src="Assest/mp28.webp" width="700" height="700" alt="Rangefinder 35 camera" loading="lazy"><button class="p-heart" aria-label="Save to wishlist" aria-pressed="false" onclick="window.location.href='404.html'"><i class="fa-regular fa-heart"></i></button></div>
+        <div class="p-body"><div class="p-meta"><span><i class="fa-solid fa-store"></i> Lumen &amp; Co</span><span class="p-rate"><i class="fa-solid fa-star"></i> 5.0</span></div><h3>Rangefinder 35 Camera</h3><div class="p-foot"><strong>$460</strong><button class="add-cart" data-name="Rangefinder 35" onclick="window.location.href='404.html';">
+  <i class="fa-solid fa-bag-shopping"></i> Add
+</button>
+</div></div>
+      </article>
+      <article class="product tilt" data-cat="home">
+        <div class="p-img"><img src="Assest/mp29.webp" width="700" height="700" alt="Dusk table lamp" loading="lazy"><button class="p-heart" aria-label="Save to wishlist" aria-pressed="false" onclick="window.location.href='404.html'"><i class="fa-regular fa-heart"></i></button></div>
+        <div class="p-body"><div class="p-meta"><span><i class="fa-solid fa-store"></i> Marigold Goods</span><span class="p-rate"><i class="fa-solid fa-star"></i> 4.7</span></div><h3>Dusk Table Lamp</h3><div class="p-foot"><strong>$74</strong><button class="add-cart" data-name="Dusk Table Lamp" onclick="window.location.href='404.html';">
+  <i class="fa-solid fa-bag-shopping"></i> Add
+</button>
+</div></div>
+      </article>
+      <article class="product tilt" data-cat="home">
+        <div class="p-img"><img src="Assest/mp30.webp" width="700" height="700" alt="Agave in a clay pot" loading="lazy"><span class="p-badge">New</span><button class="p-heart" aria-label="Save to wishlist" aria-pressed="false" onclick="window.location.href='404.html'"><i class="fa-regular fa-heart"></i></button></div>
+        <div class="p-body"><div class="p-meta"><span><i class="fa-solid fa-store"></i> Rootwork</span><span class="p-rate"><i class="fa-solid fa-star"></i> 4.9</span></div><h3>Agave in Clay Pot</h3><div class="p-foot"><strong>$38</strong><button class="add-cart" data-name="Agave in Clay Pot" onclick="window.location.href='404.html'">
+  <i class="fa-solid fa-bag-shopping"></i> Add
+</button>
+</div></div>
+      </article>
+      <article class="product tilt" data-cat="lifestyle">
+        <div class="p-img"><img src="Assest/mp31.webp" width="700" height="700" alt="Oakmoss body oil" loading="lazy"><button class="p-heart" aria-label="Save to wishlist" aria-pressed="false" onclick="window.location.href='404.html'"><i class="fa-regular fa-heart"></i></button></div>
+        <div class="p-body"><div class="p-meta"><span><i class="fa-solid fa-store"></i> Northgrove</span><span class="p-rate"><i class="fa-solid fa-star"></i> 4.8</span></div><h3>Oakmoss Body Oil</h3><div class="p-foot"><strong>$42</strong><button class="add-cart" data-name="Oakmoss Body Oil" onclick="window.location.href='404.html'"><i class="fa-solid fa-bag-shopping"></i> Add</button></div></div>
+      </article>
+      <article class="product tilt" data-cat="lifestyle">
+        <div class="p-img"><img src="Assest/mp16.webp" width="700" height="700" alt="Orbit sculpture set" loading="lazy"><span class="p-badge">Limited</span><button class="p-heart" aria-label="Save to wishlist" aria-pressed="false" onclick="window.location.href='404.html'"><i class="fa-regular fa-heart"></i></button></div>
+        <div class="p-body"><div class="p-meta"><span><i class="fa-solid fa-store"></i> Plume Atelier</span><span class="p-rate"><i class="fa-solid fa-star"></i> 5.0</span></div><h3>Orbit Sculpture Set</h3><div class="p-foot"><strong>$96</strong><button class="add-cart" data-name="Orbit Sculpture Set" onclick="window.location.href='404.html'"><i class="fa-solid fa-bag-shopping"></i> Add</button></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. STATS ============ -->
+<section class="stats dark" id="stats">
+  <div class="stats-bg" aria-hidden="true"><img src="Assest/mp32.webp" width="1600" height="900" alt="" loading="lazy"></div>
+  <div class="container">
+    <h2 class="stats-title split-title">Buy. Sell. Repeat.</h2>
+    <div class="stats-grid">
+      <div class="stat" data-aos="fade-up"><i class="fa-solid fa-users"></i><strong class="counter" data-count="2.4" data-decimals="1" data-suffix="M+">0</strong><span>active buyers</span></div>
+      <div class="stat" data-aos="fade-up" data-aos-delay="100"><i class="fa-solid fa-store"></i><strong class="counter" data-count="180" data-suffix="K">0</strong><span>verified sellers</span></div>
+      <div class="stat" data-aos="fade-up" data-aos-delay="200"><i class="fa-solid fa-earth-asia"></i><strong class="counter" data-count="96">0</strong><span>countries served</span></div>
+      <div class="stat" data-aos="fade-up" data-aos-delay="300"><i class="fa-solid fa-star"></i><strong class="counter" data-count="4.9" data-decimals="1">0</strong><span>average review score</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. TESTIMONIALS ============ -->
+<section class="section reviews" id="reviews">
+  <div class="container reviews-grid">
+    <div class="reviews-side">
+      <h2 class="split-title">People who stopped worrying about deals.</h2>
+      <div class="thumbs" id="thumbs" role="tablist" aria-label="Choose a review">
+        <button class="thumb is-active" role="tab" aria-label="Review by Priya Nair"><img src="Assest/mp33.webp" width="240" height="240" alt=""></button>
+        <button class="thumb" role="tab" aria-label="Review by Marcus Reid"><img src="Assest/mp4.webp" width="240" height="240" alt=""></button>
+        <button class="thumb" role="tab" aria-label="Review by Elena Voss"><img src="Assest/mp5.webp" width="240" height="240" alt=""></button>
+        <button class="thumb" role="tab" aria-label="Review by Tomás Aguilar"><img src="Assest/mp6.webp" width="240" height="240" alt=""></button>
+      </div>
+      <div class="slider-ctrl">
+        <button id="prevRev" aria-label="Previous review"><i class="fa-solid fa-arrow-left"></i></button>
+        <button id="nextRev" aria-label="Next review"><i class="fa-solid fa-arrow-right"></i></button>
+        <div class="rev-timer" aria-hidden="true"><span id="revTimer"></span></div>
+      </div>
+    </div>
+
+    <div class="reviews-stage" id="revStage">
+      <i class="fa-solid fa-quote-right q-mark" aria-hidden="true"></i>
+      <blockquote class="rev is-active">
+        <p>I sold my whole vintage lens collection in a weekend. The escrow meant buyers trusted me, and the payout landed before I'd finished packing.</p>
+        <footer><img src="Assest/mp3.webp" width="240" height="240" alt=""><div><b>Priya Nair</b><span>Camera seller, Chennai</span></div></footer>
+      </blockquote>
+      <blockquote class="rev">
+        <p>A seller sent the wrong size and Stackly refunded me the same afternoon. That is the first time a marketplace has felt on my side.</p>
+        <footer><img src="Assest/mp4.webp" width="240" height="240" alt=""><div><b>Marcus Reid</b><span>Buyer, Manchester</span></div></footer>
+      </blockquote>
+      <blockquote class="rev">
+        <p>The listing builder wrote better titles than I did. My shop's views tripled in a month and I stopped dreading product photos.</p>
+        <footer><img src="Assest/mp5.webp" width="240" height="240" alt=""><div><b>Elena Voss</b><span>Home goods seller, Berlin</span></div></footer>
+      </blockquote>
+      <blockquote class="rev">
+        <p>Live tracking and in-app chat mean I never leave the platform. Every purchase so far has arrived early and exactly as pictured.</p>
+        <footer><img src="Assest/mp6.webp" width="240" height="240" alt=""><div><b>Tomás Aguilar</b><span>Buyer, Mexico City</span></div></footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. BLOG ============ -->
+<section class="section blog dark" id="blog">
+  <div class="container">
+    <div class="sec-head">
+      <h2 class="split-title">Stories, guides and shop notes.</h2>
+      <a class="btn btn-ghost magnetic" href="404.html" data-aos="fade-up"><span>All articles</span><i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="blog-grid">
+      <article class="post post-lg" data-aos="fade-up">
+        <a href="404.html" class="post-img"><img src="Assest/mp34.webp" width="900" height="600" alt="Camera on a pedestal" loading="lazy"><span class="post-go"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+        <div class="post-body">
+          <div class="post-meta"><span class="tag">Seller stories</span><span><i class="fa-regular fa-calendar"></i> Sep 24, 2026</span><span><i class="fa-regular fa-clock"></i> 6 min</span></div>
+          <h3><a href="#blog">How three small shops doubled repeat orders with better photos</a></h3>
+          <p>We followed a camera reseller, a ceramicist and a skincare maker for ninety days to see what changed once their listings looked as good as their products.</p>
+        </div>
+      </article>
+      <article class="post" data-aos="fade-up" data-aos-delay="120">
+        <a href="404.html" class="post-img"><img src="Assest/mp35.webp" width="900" height="600" alt="Potted plant on a dark backdrop" loading="lazy"><span class="post-go"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+        <div class="post-body">
+          <div class="post-meta"><span class="tag">Guides</span><span><i class="fa-regular fa-calendar"></i> Sep 17, 2026</span></div>
+          <h3><a href="404.html">A buyer's guide to escrow, step by step</a></h3>
+        </div>
+      </article>
+      <article class="post" data-aos="fade-up" data-aos-delay="240">
+        <a href="404.html" class="post-img"><img src="Assest/mp36.webp" width="900" height="600" alt="Chat negotiation on a phone" loading="lazy"><span class="post-go"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+        <div class="post-body">
+          <div class="post-meta"><span class="tag">Product</span><span><i class="fa-regular fa-calendar"></i> Sep 9, 2026</span></div>
+          <h3><a href="404.html">Inside our new in-chat offer tool</a></h3>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-media">
+      <figure class="reveal-img">
+        <img src="Assest/mp37.webp" width="900" height="1000" alt="Parcel with a delivery pin" loading="lazy">
+      </figure>
+      <ul class="contact-list">
+        <li data-aos="fade-up"><span><i class="fa-solid fa-envelope"></i></span><div><b>Email</b><a href="404.html">hello@stackly.com</a></div></li>
+        <li data-aos="fade-up" data-aos-delay="80"><span><i class="fa-solid fa-phone"></i></span><div><b>Phone</b><a href="404.html">+1 (555) 014-2290</a></div></li>
+        <li data-aos="fade-up" data-aos-delay="160"><span><i class="fa-solid fa-location-dot"></i></span><div><b>Office</b><em>48 Mercer Street, New York, NY</em></div></li>
+      </ul>
+    </div>
+
+    <div class="contact-form-wrap">
+      <h2 class="split-title">Tell us what you're selling, or what's gone wrong.</h2>
+      <p class="lead" data-aos="fade-up">We reply within ten minutes during support hours and within a few hours at night.</p>
+
+      <form class="form" id="contactForm" autocomplete="off" novalidate data-aos="fade-up">
+        <div class="field-row">
+          <div class="field"><input type="text" id="cName" name="name" placeholder=" " required autocomplete="name"><label for="cName">Your name</label><i class="fa-solid fa-user"></i><small>Please enter your name.</small></div>
+          <div class="field"><input type="email" id="cMail" name="email" placeholder=" " required autocomplete="email"><label for="cMail">Email address</label><i class="fa-solid fa-envelope"></i><small>Enter a valid email address.</small></div>
+        </div>
+        <div class="field select">
+          <select id="cTopic" name="topic" required>
+            <option value="" selected disabled hidden></option>
+            <option>I want to sell on Stackly</option>
+            <option>I need help with an order</option>
+            <option>Partnership or press</option>
+            <option>Something else</option>
+          </select>
+          <label for="cTopic">What can we help with?</label><i class="fa-solid fa-chevron-down"></i><small>Choose a topic.</small>
+        </div>
+        <div class="field"><textarea id="cMsg" name="message" rows="4" placeholder=" " required minlength="10"></textarea><label for="cMsg">Your message</label><small>Tell us a little more (10+ characters).</small></div>
+        <button class="btn btn-primary btn-lg magnetic" type="submit"><span>Send message</span><i class="fa-solid fa-paper-plane"></i></button>
+        <p class="form-ok" id="formOk" role="status"><i class="fa-solid fa-circle-check"></i> Thanks! Your message is on its way to our team.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer dark">
+  <div class="container footer-top">
+    <div class="f-brand">
+      <a href="index.html" class="logo" aria-label="Stackly home"><img src="Assest/logo.webp" width="229" height="58" alt="Stackly"></a>
+      <p>The marketplace where great finds meet the people who want them.</p>
+      <form class="news" id="newsForm" novalidate>
+        <input type="email" placeholder="Your email for weekly picks" aria-label="Email address" autocomplete="off" required>
+        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+      <p class="news-ok" id="newsOk" role="status"></p>
+    </div>
+    <nav class="f-col" aria-label="Marketplace">
+      <h4>Marketplace</h4>
+      <a href="404.html">Categories</a><a href="404.html">Featured picks</a><a href="404.html">How it works</a><a href="404.html">Reviews</a>
+    </nav>
+    <nav class="f-col" aria-label="Company">
+      <h4>Company</h4>
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="f-col">
+      <h4>Follow us</h4>
+      <div class="socials">
+        <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="404.html" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <p class="f-pay"><i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i><i class="fa-brands fa-cc-paypal"></i><i class="fa-brands fa-apple-pay"></i></p>
+    </div>
+  </div>
+  <div class="footer-mark" aria-hidden="true"><img src="Assest/logo.webp" width="229" height="58" alt="" loading="lazy"></div>
+  <div class="container footer-bottom">
+    <span>&copy; 2026 Stackly Inc. All rights reserved.</span>
+    <span class="f-legal"><a href="404.html">Privacy</a><a href="404.html">Terms</a><a href="404.html">Cookies</a></span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Login dialog -->
+<dialog class="login" id="loginDialog" aria-labelledby="loginTitle">
+  <div class="login-card">
+    <button class="login-close" type="button" aria-label="Close login" data-close-login><i class="fa-solid fa-xmark"></i></button>
+    <div class="login-art"><img src="Assest/mp1.webp" width="560" height="560" alt=""></div>
+    <form class="login-form" id="loginForm" novalidate>
+      <h3 id="loginTitle">Welcome back</h3>
+      <p>Log in to track orders, manage listings and message sellers.</p>
+      <div class="field"><input type="email" id="lMail" placeholder=" " required autocomplete="email"><label for="lMail">Email address</label><i class="fa-solid fa-envelope"></i><small>Enter a valid email address.</small></div>
+      <div class="field"><input type="password" id="lPass" placeholder=" " required minlength="6" autocomplete="current-password"><label for="lPass">Password</label><i class="fa-solid fa-lock"></i><small>Password needs 6+ characters.</small></div>
+      <button class="btn btn-primary btn-lg" type="submit"><span>Log in</span><i class="fa-solid fa-arrow-right"></i></button>
+      <p class="login-alt">New here? <a href="signup.html">Create an account</a></p>
+    </form>
+  </div>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+<script>document.querySelectorAll("img").forEach(function(i){i.addEventListener("error",function(){i.style.visibility="hidden"})})</script>
+</body>
+</html>
