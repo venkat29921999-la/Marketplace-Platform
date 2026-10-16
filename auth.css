@@ -162,3 +162,4 @@
 .pc img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:var(--r-m);transition:transform 1s var(--ease)}.pc:hover img{transform:scale(1.04)}
 .pc h3{margin:10px 0 0;font-size:1.15rem}.pf{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:6px}.pf b{font:800 1.3rem var(--head)}
 .hello .chips span{border-color:var(--line-light)}
+.forgot{text-align:right;margin-top:-6px}.forgot a{font-size:.88rem;font-weight:600;border-bottom:1.5px solid var(--saf);transition:opacity .3s}.forgot a:hover{opacity:.7}

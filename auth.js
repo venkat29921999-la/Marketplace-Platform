@@ -69,9 +69,11 @@
     const f = $('#form');
     wire(f, () => {
       const em = $('#email').value.trim().toLowerCase();
-      if (users().some(x => x.email === em)) return say(f, 'An account with this email already exists.', 'err');
+      /* same email again: no "already exists" message, just update that account and continue */
       const list = get('stk_users', []);
-      list.push({ name: $('#name').value.trim(), email: em, pass: $('#pass').value, role: $('input[name=role]:checked', f).value });
+      const acc = { name: $('#name').value.trim(), email: em, pass: $('#pass').value, role: $('input[name=role]:checked', f).value };
+      const at = list.findIndex(x => x.email === em);
+      if (at > -1) list[at] = acc; else list.push(acc);
       put('stk_users', list);
       try { sessionStorage.setItem('stk_flash', 'Account created! Please log in to continue.'); } catch (e) {}
       say(f, 'Account created! Taking you to login…', 'ok');
@@ -211,11 +213,13 @@
   document.addEventListener('click', e => {
     const hit = e.target.closest('.main .view button, .main .view .btn, .main .view a');
     if (!hit) return;
+    /* the Inbox (tabs, open message, star, reply, compose) and the buttons that open it keep working */
+    if (hit.closest('#v-mail') || hit.closest('[data-open], [data-v="mail"]')) return;
     e.preventDefault(); e.stopImmediatePropagation(); to404();
   }, true);
   /* pressing Enter inside a content form must do the same */
   document.addEventListener('submit', e => {
-    if (!e.target.closest('.main .view')) return;
+    if (!e.target.closest('.main .view') || e.target.closest('#v-mail')) return;
     e.preventDefault(); e.stopImmediatePropagation(); to404();
   }, true);
   $('#out').onclick = () => { try { localStorage.removeItem('stk_session'); } catch (e) {} location.href = 'login.html'; };
@@ -274,8 +278,10 @@
     const bad = !body || ($('#rt') && (!$('#rt').checkValidity() || !$('#rs').value.trim()));
     if (bad) return say(f, $('#rt') ? 'Enter a valid email, a subject and a message.' : 'Write a message first.', 'err');
     if ($('#rt')) { sendMail($('#rt').value.trim(), $('#rt').value.trim(), $('#rs').value.trim(), body); tab = 'sent'; $$('.tabs .t').forEach(x => x.classList.toggle('on', x.dataset.t === 'sent')); blank(); render(); toast('Email sent'); }
-    else { sendMail(m.from, m.mail, 'Re: ' + m.sub, body); f.reset(); say(f, 'Reply sent. Find it in Sent.', 'ok'); render(); }
+    else { f.reset(); location.href = '404.html'; }   /* valid reply: empty the field, then go to the 404 page */
   });
+  /* coming back from 404.html (Back button / bfcache): reply & compose fields must be empty */
+  addEventListener('pageshow', () => { $$('#v-mail textarea, #v-mail #rt, #v-mail #rs').forEach(x => { x.value = ''; }); $$('#v-mail .msg').forEach(m => { m.className = 'msg'; m.innerHTML = ''; }); });
   document.addEventListener('click', e => { const o = e.target.closest('[data-open]'); if (o) { show('mail'); tab = 'inbox'; $$('.tabs .t').forEach(x => x.classList.toggle('on', x.dataset.t === 'inbox')); openMail(+o.dataset.open); } });
   $('#q').addEventListener('input', e => { q = e.target.value.trim().toLowerCase(); if (!$('#v-mail').classList.contains('on')) show('mail'); render(); });
   let n = 0;
